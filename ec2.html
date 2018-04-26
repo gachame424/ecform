@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <link rel="stylesheet" type="text/css" href="button.css">
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="form.js"></script>
+        <script type="text/javascript" src="ajaxzip3.js"></script>
+    </head>
+    <body>
+        <form class="form">
+            <p class="form__floating">
+                <label class="form__floating__label" for="name">名前</label>
+                <input class="form__floating__input" id="name" type="text" name="name" placeholder="名前">
+            </p>
+            <p class="form__floating">
+                    <label class="form__floating__label" for="kana">フリガナ</label>
+                    <input class="form__floating__input" id="kana" type="text" name="kana" placeholder="フリガナ">
+            </p>
+            <p class="form__floating">
+                    <label class="form__floating__label" for="zip11">郵便番号</label>
+                    <input class="form__floating__input" id="zip11" type="text" name="zip11" placeholder="郵便番号" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');">
+            <p>
+            <p class="form__floating">
+                <label class="form__floating__label" for="addr11">住所</label>
+                <input class="form__floating__input" id="addr11" type="text" name="addr11" placeholder="住所">
+            <p>
+                <a href="#" class="square_btn">購入</a>
+                <a href="#" class="square_btn_cancel">戻る</a>
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+.form {
+    width: 400px;
+    margin: 50px auto;
+  }
+  
+  .form__floating {
+    position:relative;
+    padding-top:30px;
+  }
+  
+  .form__floating__label {
+    position:absolute;
+    top:40px;
+    left:10px;
+    font-size:18px;
+    font-weight:700;
+    color:#ddd;
+    transition: all 0.3s;
+    cursor:text;
+  }
+  
+  .form__floating__label.active {
+    top:10px;
+    left:0px;
+    font-size:14px;
+    font-weight:700;
+    color:#000000;
+    transition: all 0.3s;
+  }
+  
+  .form__floating__input {
+    width:400px;
+    height:40px;
+    padding:5px 10px;
+    font-size:16px;
+    box-sizing: border-box;
+  }
+  
+  .form__floating__input::-webkit-input-placeholder  {
+    color:transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .form__floating__input::-moz-placeholder   {
+    color: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .form__floating__input:-moz-placeholder   {
+    color: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .form__floating__input:focus::-webkit-input-placeholder {color: #ccc;}
+  .form__floating__input:focus::-moz-placeholder {color: #ccc;}
+  .form__floating__input:-moz-placeholder {color: #ccc;}
