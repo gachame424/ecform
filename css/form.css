@@ -54,3 +54,5 @@
   .form__floating__input:focus::-webkit-input-placeholder {color: #ccc;}
   .form__floating__input:focus::-moz-placeholder {color: #ccc;}
   .form__floating__input:-moz-placeholder {color: #ccc;}
+
+  label.error {color: red;}

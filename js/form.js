@@ -17,4 +17,27 @@ $(function(){
         $(this).prev(label).removeClass('active');
       }
     });
+
+    $('.form').validate({
+      rules: {
+        'pass': {
+          required: true,
+          minlength: 4
+        },
+        'pass_confirm': {
+          required: true,
+          equalTo: '#pass'
+        }
+      }, 
+      messages: {
+        'pass': {
+          required: 'パスワードを入力してください',
+          minlength: 'パスワードは4文字以上で入力してください'
+        },
+        'pass_confirm': {
+          required: '確認のため再度入力してください',
+          equalTo: '上記に入力した内容と異なります。ご確認ください'
+        }
+      }
+    })
   });
